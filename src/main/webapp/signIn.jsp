@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Sign In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
@@ -45,7 +45,7 @@
         %>
 
         <div class="text-center mt-3">
-            <p>Don't have an account? <a href="signup.jsp">Sign Up</a></p>
+            <p>Don't have an account? <a href="signUp.jsp">Sign Up</a></p>
         </div>
 
         <%
