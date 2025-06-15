@@ -11,6 +11,7 @@
     <title>Sign In</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
@@ -21,10 +22,11 @@
             <p class="text-muted">Login in to continue</p>
         </div>
 
-        <form action="login" method="post"> <div class="mb-3">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" name="username" required>
-        </div>
+        <form action="login" method="post">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="username" name="username" required>
+            </div>
             <div class="mb-4">
                 <label for="password" class="form-label">Password</label>
                 <input type="password" class="form-control" id="password" name="password" required>
@@ -58,12 +60,8 @@
         <%
             }
         %>
-
-        <form action="login" method="post">
-        </form>
     </div>
 </div>
-
 </body>
 </html>
 
