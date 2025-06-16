@@ -42,22 +42,22 @@
   <div class="card shadow-sm">
     <div class="card-body">
       <table class="table table-hover">
-        <thead class="table-light">
+        <thead>
         <tr>
           <th>ID</th>
           <th>Title</th>
-          <th>Submitted By</th> <th>Status</th>
+          <th>Submitted By</th>
+          <th>Status</th>
+          <th>Remarks</th>
           <th>Actions</th>
         </tr>
         </thead>
-
 
         <tbody>
         <%
           List<Complaint> complaintsList = (List<Complaint>) request.getAttribute("complaintsList");
 
           if (complaintsList != null && !complaintsList.isEmpty()) {
-
             for (Complaint complaint : complaintsList) {
         %>
         <tr>
@@ -73,6 +73,7 @@
             <span class="badge bg-info text-dark">Submitted</span>
             <% } %>
           </td>
+          <td><%= complaint.getRemarks() != null ? complaint.getRemarks() : "No remarks" %></td>
           <td>
             <a href="complaints?action=edit&id=<%= complaint.getId() %>" class="btn btn-sm btn-outline-primary">Update</a>
             <a href="complaints?action=delete&id=<%= complaint.getId() %>" class="btn btn-sm btn-outline-danger" onclick="return confirm('Are you sure you want to delete complaint #<%= complaint.getId() %>?')">Delete</a>
@@ -83,7 +84,7 @@
         } else {
         %>
         <tr>
-          <td colspan="5" class="text-center text-muted">No complaints found in the system.</td>
+          <td colspan="6" class="text-center text-muted">No complaints found in the system.</td>
         </tr>
         <%
           }
