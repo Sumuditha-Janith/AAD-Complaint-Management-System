@@ -54,7 +54,7 @@
                 </div>
 
                 <hr>
-                <h5 class="text-muted">Admin Section</h5>
+                <h5 id="admsectext">Admin Section</h5>
 
                 <div class="mb-3">
                     <label for="status" class="form-label">Status</label>

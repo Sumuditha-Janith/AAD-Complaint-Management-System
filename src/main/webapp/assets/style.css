@@ -179,6 +179,10 @@ a:hover {
     color: #dddddd;
 }
 
+#admsectext {
+    background-color: whitesmoke;
+}
+
 @media (max-width: 768px) {
     .card-body {
         padding: 1.5rem;
